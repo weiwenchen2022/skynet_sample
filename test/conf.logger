@@ -1,0 +1,21 @@
+skynet_root = "./skynet/"
+root = "./"
+
+thread = 8
+
+logger = "test/test_logger.log"
+
+harbor = 0
+
+preload = "./service/preload.lua" -- run preload.lua before every lua service run
+
+start = "test_logger"
+bootstrap = "snlua bootstrap"
+
+luaservice = root .. "test/?.lua;" .. root .. "service/?.lua;" .. skynet_root .. "service/?.lua"
+lualoader = skynet_root .. "lualib/loader.lua"
+
+cpath = skynet_root .. "cservice/?.so"
+
+lua_path = root .. "lualib/?.lua;" .. skynet_root .. "lualib/?.lua"
+lua_cpath = skynet_root .. "luaclib/?.so"

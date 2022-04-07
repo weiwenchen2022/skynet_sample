@@ -1,0 +1,28 @@
+skynet_root = "./skynet/"
+root = "./"
+
+thread = 8
+
+logger = nil
+
+harbor = 0
+
+start = "test_persistent"
+bootstrap = "snlua bootstrap"
+
+luaservice = root .. "test/?.lua;" .. root .. "service/?.lua;" .. skynet_root .. "service/?.lua"
+lualoader = skynet_root .. "lualib/loader.lua"
+
+cpath = skynet_root .. "cservice/?.so"
+
+lua_path = root .. "lualib/?.lua;" .. skynet_root .. "lualib/?.lua"
+lua_cpath = skynet_root .. "luaclib/?.so"
+
+-- mysql conf
+mysql_host = "127.0.0.1"
+mysql_port = 3306
+mysql_username = "root"
+mysql_password = "root"
+mysql_database = "skynetdemo"
+
+persistent_slave_pool_size = 1

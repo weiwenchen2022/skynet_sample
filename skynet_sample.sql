@@ -6,7 +6,7 @@
 # https://github.com/sequelpro/sequelpro
 #
 # Host: 192.168.56.101 (MySQL 5.5.47-0ubuntu0.14.04.1)
-# Database: skynetdemo
+# Database: skynet_sample
 # ************************************************************
 
 
@@ -18,10 +18,10 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
-DROP DATABASE IF EXISTS `skynetdemo`;
-CREATE DATABASE `skynetdemo` CHARACTER SET utf8;
+DROP DATABASE IF EXISTS `skynet_sample`;
+CREATE DATABASE `skynet_sample` CHARACTER SET utf8;
 
-USE `skynetdemo`;
+USE `skynet_sample`;
 
 # Dump of table users
 # ------------------------------------------------------------

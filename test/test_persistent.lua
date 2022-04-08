@@ -3,7 +3,7 @@ local persistent = require "persistent"
 require "string_utils"
 
 skynet.start(function()
-    local userdata = persistent.load_user_data("test")
+    local userdata = persistent.load_user_data(1)
     assert(userdata)
     skynet.error("userdata =", tostring(userdata))
 
@@ -12,7 +12,7 @@ skynet.start(function()
     userdata.exp = 100
     persistent.save_user_data(userdata.id, userdata)
 
-    userdata = persistent.load_user_data("test")
+    userdata = persistent.load_user_data(1)
     assert(userdata.exp == 100)
 
     skynet.error("query_service_status =", tostring(persistent.query_service_status()))
